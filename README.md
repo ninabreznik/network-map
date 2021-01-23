@@ -6,22 +6,28 @@ Network coordinate systems assign each node a position in the chosen space. The 
 
 ## API
 
-### make_db()
+`make_db()`
+
  Create a hyperbee db instance
 
-### update(db, rtt, local_node, remote_node)
+`update(db, rtt, local_node, remote_node)`
+
 Update position of the local node
 
-### store_pos(db, nodes) // const node = [{ id, pos, opts }]
+`store_pos(db, nodes)` // const node = [{ id, pos, opts }]
+
 Store positions of selected nodes in the db
 
-### get_pos
+`get_pos`
+
 Get position for the selected key from the db
 
-### get_map
+`get_map`
+
 Create a read stream from the db
 
-### get_val
+`get_val`
+
 Get value for selected key from the db
 
 ```js
